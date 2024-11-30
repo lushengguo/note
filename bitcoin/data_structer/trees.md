@@ -9,7 +9,7 @@ Each node uses same protocol, and they always see same block-chain, they calcula
 similar as first question, they always see same blockchain and they just get the puzzle based on blockchain with same algorithm  
 
 # Radix Tree
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/28c1579f-213c-437c-97bb-be43e2132032)
 
 # Merkel Tree
 In cryptography and computer science, a hash tree or Merkle tree is a tree in which every "leaf" node is labelled with the cryptographic hash of a data block, and every node that is not a leaf (called a branch, inner node, or inode) is labelled with the cryptographic hash of the labels of its child nodes. A hash tree allows efficient and secure verification of the contents of a large data structure. A hash tree is a generalization of a hash list and a hash chain.
@@ -20,11 +20,11 @@ In bicoin, a chain node contains a Merkel Tree that including all trades, I thin
 But if they want to prove some trade is not in the Merkel Tree, they have to see the whole tree and walk through the leaf nodes.
 
 Attention: In bitcoin, if trade num cannot be divided by 2, some trade will be copied to it's brother node.  
-![alt text](image-1.png)
+![image](https://github.com/user-attachments/assets/a2cdab84-0e74-417c-8f78-da51932682dd)
 
 # Sparse Merkle Tree 稀疏默克尔树
 Every node has a index, and leaf node allowed to be None, prove exist is same as Merkel Tree, prove not exist just think that node's value is hash(None) and calculate with orther hashs then get root hash.
-![alt text](image-2.png)
+![image](https://github.com/user-attachments/assets/76d9ea7e-0d5f-41aa-a89c-fae99f959aa6)
 
 # Merkle Patricia Trie, MPT(默克尔压缩前缀树)
 https://learnblockchain.cn/books/geth/part3/mpt.html  
